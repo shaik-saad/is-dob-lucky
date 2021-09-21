@@ -32,7 +32,7 @@ input{
   font-size: large;
 }
 
-#check-btn{
+#check-btn, #reset-btn{
   margin-top: 1rem;
   padding: 0.8rem 1rem;
   background-color: var(--secondary-color);
@@ -41,6 +41,11 @@ input{
   color: var(--primary-color);
   cursor: pointer;
   font-size: large;
+}
+
+#reset-btn{
+  background-color: #282c34;
+  color: white;
 }
 
 footer{
