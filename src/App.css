@@ -71,6 +71,11 @@ footer p{
   font-size: 1.1rem;
 }
 
+#privacy-note{
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+
 #non-bullet-list{
   display: inline;
   list-style: none;
@@ -86,5 +91,9 @@ footer p{
   color: var(--secondary-color);
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+#copy-right a{
+  color: #282c34;
 }
 
