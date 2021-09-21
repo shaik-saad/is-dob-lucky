@@ -5,6 +5,8 @@ function App() {
   const [dateOfBirth, setDateOfBirth] = useState("")
   const [luckyNumber, setLuckyNumber] = useState("")
   const [message, setMessage] = useState()
+  const [errorMessage, setErrorMessage] = useState("")
+  const [showReset, setShowReset] = useState(false)
 
   // input
   function dobChangeHandler(event){
@@ -17,6 +19,13 @@ function App() {
 
   // processing
   function onClickHandler(){
+    if(dateOfBirth === "" || dateOfBirth === undefined){
+      return setErrorMessage("Please enter your birthdate.")
+    }
+    if(luckyNumber === "" || luckyNumber === undefined){
+      return setErrorMessage("Please enter your lucky number.")
+    }
+    setErrorMessage("")
     // removing hyphens from the date of birth
     var dob = dateOfBirth.replaceAll("-", "")
     var sum = 0
@@ -48,6 +57,7 @@ function App() {
         <h1>Is your Birthday lucky? 🤔</h1>
       </header>
       <div className="inner-container">
+      <p id="error-message" style={{"display": errorMessage ? "" : "none"}}>{errorMessage}</p>
         <label htmlFor="date-of-birth">Date of Birth:</label>
         <input 
           id="dateof-birth" 
