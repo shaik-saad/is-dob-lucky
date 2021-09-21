@@ -16,6 +16,16 @@
   margin: auto;
 }
 
+#error-message{
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+#result-message{
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
 label{
   font-size: 1.3rem;
 }
@@ -55,6 +65,7 @@ footer{
   right: 0;
   margin-bottom: 1rem;
 }
+
 footer p{
   display: inline;
   font-size: 1.1rem;
