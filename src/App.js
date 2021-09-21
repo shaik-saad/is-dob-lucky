@@ -88,6 +88,8 @@ function App() {
         <div>{message}</div>
       </div>
       <footer>
+        <p id="privacy-note">PRIVACY: This app does not store your data. Thank you for trusting.</p>
+        <br/>
         <p>If you loved❤️ this app, make sure to follow me on</p>
         <ul id="non-bullet-list">
           <li className="list-item">
@@ -106,6 +108,8 @@ function App() {
             </a>
           </li>
         </ul>
+        <br/>
+        <small id="copy-right">© | 2021 | <a href="https://shaiksaadullah.netlify.app/">saad.codes</a></small>
       </footer>
     </div>
   );
