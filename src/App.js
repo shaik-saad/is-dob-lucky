@@ -25,6 +25,9 @@ function App() {
     if(luckyNumber === "" || luckyNumber === undefined){
       return setErrorMessage("Please enter your lucky number.")
     }
+    if(luckyNumber < 0){
+      return setErrorMessage("Please enter your lucky number greater than zero.")
+    }
     setErrorMessage("")
     // removing hyphens from the date of birth
     var dob = dateOfBirth.replaceAll("-", "")
